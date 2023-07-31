@@ -1,10 +1,3 @@
-# notes-saving-app
-
----
-## Base Code...
-
-
-```
 from typing import Union
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
@@ -46,4 +39,3 @@ def read_item(item_id: int, q: Union[str, None] = None):
     # For example, if you access "/items/123?q=test", it will return:
     # {"item_id": 123, "q": "test"}
     return {"item_id": item_id, "q": q}
-```
