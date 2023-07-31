@@ -4,7 +4,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pymongo import MongoClient
-from secret import SECRET_KEY_MONGO_DB
+from config.secret import SECRET_KEY_MONGO_DB
 
 app = FastAPI()
 
