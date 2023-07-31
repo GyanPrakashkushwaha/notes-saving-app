@@ -13,14 +13,13 @@ async def read_item(request: Request):
     docs = list(client.notesSaving.notesSavingApp.find({}))
 
     docs_new = []
-    for item in docs:
-        # Use get method to access the values and provide a default value of an empty string
-        docs_new.append({
-            "_id": str(item["_id"]),
-            "title": str(item.get('title')),
-            "desc": str(item.get("item")),
-            "item": str(item.get("important"))
-        })
+    for doc in docs:
+        note_dict = {
+            'title': doc['title'],
+            'item': doc['item'],
+            'important': doc['important']
+        }
+        docs_new.append(note_dict)
 
     return templates.TemplateResponse("index.html", {"request": request, 'docs': docs_new})
 

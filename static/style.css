@@ -1,1 +1,103 @@
-css
+/* static/style.css */
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.notes-list .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notes-list .card-body {
+    padding: 15px;
+}
+
+.notes-list .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.notes-list .badge {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    background-color: #ffc107;
+    color: #212529;
+}
+
+#success-message {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    background-color: #d4edda;
+    color: #28a745;
+    display: none;
+}
+
+#success-message::before {
+    content: '\2713'; /* Checkmark Unicode character */
+    margin-right: 5px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+}
