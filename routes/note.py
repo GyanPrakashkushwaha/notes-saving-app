@@ -26,6 +26,7 @@ async def read_item(request: Request):
 
 @note.post("/")
 async def create_item(request :Request):
+    
     form = await request.form()
 
     form_dict = dict(form)
